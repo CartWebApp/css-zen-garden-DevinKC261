@@ -1,4 +1,48 @@
 body {
-    background-color: rgb(192, 255, 219);
-    
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(185, 220, 250);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+@keyframes mymove {
+    from {background-color: #dbffe7;}
+    to {background-color: #bbf1e9;}
+}
+
+body:hover {
+    animation: mymove 3s infinite alternate;
+}
+
+@keyframes mymove2 {
+    from {background-color: #F7D6E0;}
+    to {background-color: #fae6f5;}
+}
+
+header h1 {
+    background-color: #F7D6E0;
+    background-image: url(imgs/a1b9f9aa8c12f517f9052613de539992-Atlantis-2.png);
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 2vh;
+    margin: 1vh;
+    box-shadow: 5px 5px 5px rgb(104, 75, 120);
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: left;
+    background-color: #e0feff;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(104, 75, 120);
+    margin: 1vh;
+    padding: 1vh;
+}
+
+
+
