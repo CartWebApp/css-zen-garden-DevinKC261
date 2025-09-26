@@ -3,36 +3,75 @@ body {
     justify-content: space-around;
     background-color: rgb(185, 220, 250);
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-@keyframes mymove {
-    from {background-color: #dbffe7;}
-    to {background-color: #bbf1e9;}
-}
-
-body:hover {
     animation: mymove 3s infinite alternate;
 }
 
-@keyframes mymove2 {
-    from {background-color: #F7D6E0;}
-    to {background-color: #fae6f5;}
+@keyframes mymove {
+    from {background-color: #72b8ff;}
+    to {background-color: #809eff;}
 }
 
-header h1 {
-    background-color: #F7D6E0;
+/* The intro header */
+
+header  {
     background-image: url(imgs/a1b9f9aa8c12f517f9052613de539992-Atlantis-2.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
     text-align: center;
-    font-size: 40px;
-    color: black;
-    border-bottom: 2px solid black;
-    padding: 2vh;
-    margin: 1vh;
-    box-shadow: 5px 5px 5px rgb(104, 75, 120);
+    font-size: 100%;
+    color: rgb(255, 255, 255);
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+/* summary */
+.summary {
+    border: 2px solid black;
+    border-style: solid;
+    border-radius: 20%;
+    text-align: center;
+    padding: -4rem;
+    margin: 2rem;
 }
 
 
+
+/* blob animation*/
+
+@keyframes blob-morph {
+    0% {
+        border-radius: 40% 60% 70% 30% / 50% 30% 70% 50%;
+    }
+    25% {
+        border-radius: 30% 70% 40% 60% / 60% 50% 30% 40%;
+    }
+    50% {
+        border-radius: 60% 40% 30% 70% / 50% 60% 40% 30%;
+    }
+    75% {
+        border-radius: 70% 30% 60% 40% / 40% 50% 60% 70%;
+    }
+    100% {
+        border-radius: 40% 60% 70% 30% / 50% 30% 70% 50%;
+    }
+}
+
+.preamble h3 {
+    background-color: #ffb6c1;
+    animation: blob-morph 8s infinite alternate;
+    border: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    color: white;
+    text-align: center;
+    padding: 5vh;
+    margin: 2vh;
+    float: left;
+}
+/* navigations*/
 
 nav {
     display: flex;
@@ -43,6 +82,3 @@ nav {
     margin: 1vh;
     padding: 1vh;
 }
-
-
-
