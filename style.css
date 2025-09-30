@@ -1,6 +1,6 @@
 body {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: rgb(185, 220, 250);
     font-family: Georgia, 'Times New Roman', Times, serif;
     animation: mymove 3s infinite alternate;
@@ -12,27 +12,31 @@ body {
 }
 
 /* The intro header */
-
-header  {
-    background-image: url(imgs/a1b9f9aa8c12f517f9052613de539992-Atlantis-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    text-align: center;
-    font-size: 100%;
-    color: rgb(255, 255, 255);
-    margin-top: 1vh;
-    margin-bottom: 2vh;
+header {
+    background-color: #e0feff;
+    border: 2px solid black;
+    margin: 100px;
+    padding: 20px 15px 10px 15px;
 }
 
-/* summary */
-.summary {
-    border: 2px solid black;
-    border-style: solid;
-    border-radius: 20%;
+header h1{ 
+    display: block;
+    font-size: 60px;
+    padding: 20px 15px 0px 15px;
+    line-height: 60px;
+    font-weight: 900;
     text-align: center;
-    padding: -4rem;
-    margin: 2rem;
+    position: static;
+}
+
+header h2 {
+    display: block;
+    font-size: 30px;
+    padding: 0px 15px 20px 15px;
+    line-height: 30px;
+    font-weight: 900;
+    text-align: center;
+    position: static;
 }
 
 
@@ -58,19 +62,24 @@ header  {
 }
 
 .preamble h3 {
-    background-color: #ffb6c1;
+    background-color: #d5f1ef;
     animation: blob-morph 8s infinite alternate;
     border: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
-    color: white;
+    font-size: 50px;
+    color: rgb(227, 190, 255);
     text-align: center;
-    padding: 5vh;
-    margin: 2vh;
-    float: left;
+    padding: 10vh;
+    margin: 7vh;
+    float: center;
+    filter: blur(5px);
 }
+
+.preamble h3:hover {
+    filter: blur(0px);
+    transition: 0.5s; }
 /* navigations*/
 
 nav {
