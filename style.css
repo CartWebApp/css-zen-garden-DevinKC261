@@ -1,85 +1,94 @@
 body {
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(185, 220, 250);
+    background-color: rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     animation: mymove 3s infinite alternate;
 }
 
-@keyframes mymove {
-    from {background-color: #72b8ff;}
-    to {background-color: #809eff;}
+* {
+    color: white;
 }
+/* Section elements*/
 
+.intro {
+    background-image: url(imgs/Synthwave.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 5px 5px 15px rgb(104, 75, 120);
+    height: 100vh;
+}
 /* The intro header */
-header {
-    background-color: #e0feff;
-    border: 2px solid black;
-    margin: 100px;
-    padding: 20px 15px 10px 15px;
-}
 
-header h1{ 
+h1, h2{ 
     display: block;
     font-size: 60px;
     padding: 20px 15px 0px 15px;
-    line-height: 60px;
+    margin: 10px;
+    line-height: 100px;
     font-weight: 900;
     text-align: center;
     position: static;
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
 }
 
-header h2 {
-    display: block;
-    font-size: 30px;
-    padding: 0px 15px 20px 15px;
-    line-height: 30px;
-    font-weight: 900;
+
+/* intro text*/
+
+.summary p{ 
+    color: white;
     text-align: center;
-    position: static;
+}
+
+#zen-preamble {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+/* text section 2*/
+
+.main .explanation {
+    background: url(imgs/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 40%;
+    margin-top: 3em;
+    padding: 1em 4em;
+    border: 1px solid #e0feff;
+    box-shadow: 5px 5px 5px rgb(104, 75, 120);
+}
+
+.main {
+    background-image: url(imgs/blahaj-blåhaj.gif);
+}
+
+/* Animation tests*/
+
+@keyframes mymove {
+    from {background-color: #000000;}
+    to {background-color: #130517;}
 }
 
 
-
-/* blob animation*/
-
-@keyframes blob-morph {
-    0% {
-        border-radius: 40% 60% 70% 30% / 50% 30% 70% 50%;
-    }
-    25% {
-        border-radius: 30% 70% 40% 60% / 60% 50% 30% 40%;
-    }
-    50% {
-        border-radius: 60% 40% 30% 70% / 50% 60% 40% 30%;
-    }
-    75% {
-        border-radius: 70% 30% 60% 40% / 40% 50% 60% 70%;
-    }
-    100% {
-        border-radius: 40% 60% 70% 30% / 50% 30% 70% 50%;
-    }
-}
-
+/* 3rd heading*/
 .preamble h3 {
-    background-color: #d5f1ef;
-    animation: blob-morph 8s infinite alternate;
     border: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-self: end ;
+    align-self: end;
     font-size: 50px;
-    color: rgb(227, 190, 255);
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
     text-align: center;
-    padding: 10vh;
-    margin: 7vh;
+    padding: 1vh;
+    margin: 2vh;
     float: center;
-    filter: blur(5px);
 }
-
-.preamble h3:hover {
-    filter: blur(0px);
-    transition: 0.5s; }
 /* navigations*/
 
 nav {
