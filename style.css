@@ -6,7 +6,7 @@ body {
 }
 
 * {
-    color: white;
+    justify-content: center;
 }
 /* Section elements*/
 
@@ -20,8 +20,7 @@ body {
 }
 /* The intro header */
 
-h1, h2{ 
-    display: block;
+h1,h2{ 
     font-size: 60px;
     padding: 20px 15px 0px 15px;
     margin: 10px;
@@ -29,21 +28,50 @@ h1, h2{
     font-weight: 900;
     text-align: center;
     position: static;
-    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    background-image: linear-gradient(rgb(224, 173, 255), rgb(30, 30, 243));
     color: transparent;
     background-clip: text;
 }
+div > h3{
+    font-size: 30px;
+    line-height: 1.6;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
 
+div,p {
+    color: white;
+    font-size: 20px;
+}
+
+p:nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
+a:hover {
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
 
 /* intro text*/
 
-.summary p{ 
-    color: white;
+.summary{ 
     text-align: center;
 }
 
 #zen-preamble {
-    color: white;
     text-align: center;
     margin: 10px;
     padding: 20px;
@@ -54,16 +82,36 @@ h1, h2{
 .main .explanation {
     background: url(imgs/giphy.gif);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: right center;
-    width: 40%;
-    margin-top: 3em;
-    padding: 1em 4em;
+    width: 50vh;
+    height: 50vh;
+    margin-top: 4em;
+    padding: 0em 4em;
     border: 1px solid #e0feff;
     box-shadow: 5px 5px 5px rgb(104, 75, 120);
 }
 
+[href] {
+    color: rgb(194, 29, 239);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: rgb(255, 212, 251) 0 0 10px;
+}
+
+[article=_blank] {
+    color: rgb(194, 29, 239);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: rgb(255, 212, 251) 0 0 10px;
+}
 .main {
+    display: grid;
+    grid-template: 2fr 2fr/ 2fr 2fr;
     background-image: url(imgs/blahaj-blåhaj.gif);
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Animation tests*/
@@ -78,8 +126,7 @@ h1, h2{
 .preamble h3 {
     border: white;
     display: flex;
-    justify-self: end ;
-    align-self: end;
+    justify-self: center;
     font-size: 50px;
     background-image: linear-gradient(rgb(204, 123, 255), blue);
     color: transparent;
