@@ -5,6 +5,11 @@ body {
     animation: mymove 3s infinite alternate;
 }
 
+page-wrapper {
+    display: grid;
+    grid-template: 2fr 2fr 1fr/ 2fr 2fr 1fr;
+    gap: 2vh;
+}
 * {
     justify-content: center;
 }
@@ -80,17 +85,35 @@ a:hover {
 
 /* text section 2*/
 
-.main .explanation {
+.explanation {
+    justify-self: left;
     background: url(imgs/giphy.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
     width: 50vh;
-    height: 50vh;
+    height: 80vh;
     margin-top: 4em;
+    margin-left: 2em;
     padding: 0em 4em;
     border: 1px solid #e0feff;
     box-shadow: 5px 5px 5px rgb(104, 75, 120);
+}
+
+.explanation h3 {
+    position: absolute;
+    rotate: -90deg;
+    bottom: -14em;
+    margin: 0;
+    left: -4em;
+    padding: 2em;
+}
+
+.explanation p {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 2em;
 }
 
 [href] {
@@ -107,27 +130,36 @@ a:hover {
     text-shadow: rgb(255, 212, 251) 0 0 10px;
 }
 .main {
-    display: grid;
-    grid-template: 2fr 2fr/ 2fr 2fr;
     background-image: url(imgs/blahaj-blåhaj.gif);
     justify-items: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 /* Benefits text*/
-.benefits {
-    display: grid;
-    grid-column: 2fr;
-    grid-row: 2fr;
+.benefits:after {
+    gap: 2vh;
 }
 
 
+
 .benefits p {
+    grid-row: end;
     background-image: linear-gradient(rgb(159, 159, 255), cyan, rgb(204, 123, 255));
     color: transparent;
     background-clip: text;
 }
 
+
+.participation {
+    display: grid;
+    grid-column-start: 3;
+    gap: 2vh;
+    justify-self: right;
+}
+
+.participation:first-child {
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+}
 /* Animation tests*/
 
 @keyframes mymove {
