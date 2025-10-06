@@ -140,10 +140,11 @@ p.participation {
 }
 
 .explanation h3 {
+    position:absolute;
     rotate: 90deg;
-    bottom: -14em;
+    bottom: -32em;
     margin: 0;
-    padding: 2em;
+    padding: 20em;
 }
 
 .explanation p {
@@ -180,7 +181,7 @@ p.participation {
     background: url(imgs/purpsynth.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right center;
+    background-position: center;
     width: 80vh;
     height: 80vh;
     margin-top: 4em;
@@ -191,11 +192,13 @@ p.participation {
 }
 
 .participation h3 {
+    position: absolute;
     rotate: -90deg;
-    bottom: -14em;
+    bottom: -47em;
     margin: 0;
-    left: -4em;
-    padding: 2em;
+    left: 14em;
+    right: 16em;
+    padding: -20em;
 }
 
 .participation p {
@@ -290,6 +293,12 @@ footer {
     padding: 1vh;
     margin: 3vh;
 }
+
+/* Attributes*/
+
+[id=ts] {
+    font-size: 25px;
+}
 /* Animation tests*/
 
 @keyframes mymove {
@@ -304,6 +313,9 @@ a:last-of-type {
     text-shadow: rgb(255, 167, 246) 0 0 10px;
 }
 
+a:focus {
+    background-color: yellow;
+}
 /* Boxes*/
 .preamble h3 {
     border: white;
