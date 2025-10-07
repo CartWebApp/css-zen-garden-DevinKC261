@@ -1,13 +1,18 @@
 
 /* general styles */
 
-body {
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+:root {
     animation: mymove 3s infinite alternate;
 }
 
+body {
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p:first-line {
+    text-decoration: dashed underline;
+}
 * {
     justify-content: center;
 }
@@ -109,6 +114,14 @@ p.participation {
     background-clip: text;
     text-shadow: rgb(255, 167, 246) 0 0 10px;
 }
+
+p:last-child {
+    font-size: 20px;
+}
+
+h2:only-of-type {
+    font-size: 50px;
+}
 /* intro text*/
 
 
@@ -142,9 +155,9 @@ p.participation {
 .explanation h3 {
     position:absolute;
     rotate: 90deg;
-    bottom: -32em;
+    bottom: -27em;
     margin: 0;
-    padding: 20em;
+    padding: 14em;
 }
 
 .explanation p {
@@ -170,7 +183,7 @@ p.participation {
 
 .main {
     background-image: url(imgs/blahaj-blåhaj.gif);
-    justify-items: center;
+    justify-items:center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -250,17 +263,18 @@ p:nth-last-child(3) {
 }
 
 .benefits h3 {
-    bottom: -14em;
+    bottom: -12em;
     margin: -2em;
-    padding: 2em;
+    padding: 3em;
 }
 
 .benefits p {
     color: white;
     font-size: 20px;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 0em;
 }
+
 a:visited {
     text-decoration: none;
     font-weight: bold;
@@ -349,3 +363,86 @@ nav {
     padding: 1vh;
 }
 
+p ~ ul {
+    list-style: none;
+    font-size: 20px;
+}
+
+::selection {
+    background: rgb(255, 167, 246);
+    color: black;
+}
+
+h3:only-child{
+    font-size: 40px;
+}
+
+a:nth-last-of-type(2) {
+    background-image: linear-gradient(rgb(178, 55, 255), rgb(209, 40, 40));
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
+
+a:nth-of-type(2) {
+    background-image: linear-gradient(rgb(255, 165, 55), rgb(209, 40, 40));
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
+
+p:first-of-type {
+    background-image: linear-gradient(rgb(212, 144, 255), rgb(54, 54, 255));
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
+
+.benefits:not(p) {
+        background-image: linear-gradient(rgb(212, 144, 255), rgb(54, 54, 255));
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
+
+li[target=".sidebar"] {
+font-size: 20px;
+}
+
+a:active {
+    background-image: linear-gradient(rgb(204, 123, 255), blue);
+    color: transparent;
+    background-clip: text;
+    text-shadow: rgb(255, 167, 246) 0 0 10px;
+}
+
+a::after {
+    content: "👾";
+}
+
+a::before {
+    content: "🎶";
+}
+ [title~=Cascading] {
+    font-size: 25px;
+    text-decoration: underline rgb(253, 184, 255);
+}
+
+[lang|=en] {
+    font-size: 20px;
+    text-decoration: underline rgb(255, 197, 253);
+}
+
+div[id^="zen"] {
+    font-size: 20px;
+    text-decoration: underline rgb(255, 229, 193);
+}
+
+div[class$="name"] {
+    font-size: 20px;
+}
+
+div[class*="class"] {
+    font-size: 20px;
+    text-decoration: underline rgb(193, 255, 229);
+}
